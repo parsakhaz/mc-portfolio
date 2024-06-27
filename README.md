@@ -1,40 +1,85 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Minecraft-Inspired Interactive Portfolio Template
+
+## Overview
+
+This project is a highly customizable, Minecraft-themed portfolio website template built with Next.js and React. It features interactive elements, dynamic day-night cycles, and engaging visual effects to create a unique and memorable showcase for developers and designers.
+
+## Key Features
+
+- Responsive design suitable for desktop and mobile devices
+- Interactive Minecraft-inspired elements (floating blocks, experience orbs, etc.)
+- Dynamic day-night cycle with changing background
+- Custom loading screen and chunk-loading effects
+- SEO-friendly structure with customizable metadata
+- Easy-to-customize sections for showcasing projects, skills, and personal information
+
+## Technologies Used
+
+- Next.js
+- React
+- Framer Motion (for animations)
+- Tailwind CSS (for styling)
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+   ```cmd
+   git clone https://github.com/parsakhaz/parsa-portfolio.git
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+   ```cmd
+   cd minecraft-portfolio-template
+   npm install
+   ```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+3. Run the development server:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+   ```cmd
+   npm run dev
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+4. Open `http://localhost:3000` in your browser to see the result.
 
-## Learn More
+## Customization
 
-To learn more about Next.js, take a look at the following resources:
+### Personal Information
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Edit the `seoData` object in `pages/index.jsx` to update your personal information and SEO metadata.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Content Sections
 
-## Deploy on Vercel
+Modify or replace the following components in the `components` directory to add your own content:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `Hero.jsx`
+- `About.jsx`
+- `Projects.jsx`
+- `Skills.jsx`
+- `Resources.jsx`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Styling
+
+The project uses Tailwind CSS for styling. Customize the design by editing the Tailwind configuration file and component-specific styles.
+
+### Interactive Elements
+
+Adjust the behavior and appearance of interactive elements by modifying the components in the `components/effects` directory.
+
+## Deployment
+
+This template is ready for deployment on platforms like Vercel, Netlify, or any other service that supports Next.js applications.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## Acknowledgements
+
+- Original design concept by Parsa Khazaeepoul
+- Minecraft-inspired assets and ideas courtesy of Mojang Studios
+
+## Support
+
+For questions or support, please [open an issue](https://github.com/parsakhaz/parsa-portfolio/issues) on the GitHub repository.
