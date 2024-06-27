@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Minecraft-style scrollbar */
+::-webkit-scrollbar {
+	width: 12px;
+}
+
+::-webkit-scrollbar-track {
+	background: #3a3a3a;
+	border: 2px solid #2a2a2a;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #6b6b6b;
+	border: 2px solid #2a2a2a;
+	border-radius: 0; /* Remove rounded corners */
+}
+
+/* Add this to your global CSS file */
+body {
+	overflow-x: hidden;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+
+body {
+	font-family: 'Pixelify Sans', sans-serif;
+	letter-spacing: 0.05em;
+	font-size: 16px;
+	text-shadow: -2px 0 0 #000, 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000;
+	-webkit-font-smoothing: none;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@media (min-width: 640px) {
+	body {
+		font-size: 18px;
+		letter-spacing: 0.08em;
+	}
+}
+
+@media (min-width: 768px) {
+	body {
+		font-size: 20px;
+		letter-spacing: 0.1em;
+	}
+}
+
+/* Apply universal font shadow */
+* {
+	text-shadow: -2px 0 0 #000, 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000;
+}
